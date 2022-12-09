@@ -1,2 +1,0 @@
-motor_controller
--DCATKIN_DEVEL_PREFIX=/home/hrithik/noetic/amr_ws/devel -DCMAKE_INSTALL_PREFIX=/home/hrithik/noetic/amr_ws/install -G Unix Makefiles
