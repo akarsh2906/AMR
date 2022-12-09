@@ -14,6 +14,9 @@ RIGHT_STICK_LR = 3
 RIGHT_STICK_UP = 4
 DEADZONE = 0.11
 
+MAX_LINEAR_VEL = 0.1
+MAX_ANGULAR_VEL = 0.5
+
 
 pygame.init()
 joystick.init()
@@ -53,10 +56,10 @@ if __name__ == "__main__":
         # if(msg.angular.z < 0.05 or msg.angular.z > -0.05):
         #     msg.angular.z = 0
 
-        msg.linear.x = 0.15*(xbox.get_axis(RIGHT_TRIGGER)+1) - 0.15*(xbox.get_axis(LEFT_TRIGGER)+1)
+        msg.linear.x = (MAX_LINEAR_VEL/2)*(xbox.get_axis(RIGHT_TRIGGER)+1) - 0.15*(xbox.get_axis(LEFT_TRIGGER)+1)
         
         if(xbox.get_axis(LEFT_STICK_LR) > DEADZONE or xbox.get_axis(LEFT_STICK_LR) < -DEADZONE):
-            msg.angular.z = -(xbox.get_axis(LEFT_STICK_LR))
+            msg.angular.z = -(xbox.get_axis(LEFT_STICK_LR)) * MAX_ANGULAR_VEL
         else:
             msg.angular.z = 0
 

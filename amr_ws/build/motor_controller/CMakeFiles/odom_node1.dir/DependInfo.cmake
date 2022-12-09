@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/irp2023/AMR/amr_ws/src/motor_controller/scripts/odom_node1.cpp" "/home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/odom_node1.dir/scripts/odom_node1.cpp.o"
+  "/home/hrithik/noetic/amr_ws/src/motor_controller/scripts/odom_node1.cpp" "/home/hrithik/noetic/amr_ws/build/motor_controller/CMakeFiles/odom_node1.dir/scripts/odom_node1.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

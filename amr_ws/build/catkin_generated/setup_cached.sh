@@ -7,5 +7,7 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/irp2023/AMR/amr_ws/build'
-export ROS_PACKAGE_PATH='/home/irp2023/Noetic/amr_ws/src:/home/irp2023/AMR/amr_ws/src:/opt/ros/noetic/share'
+export CMAKE_PREFIX_PATH="/home/hrithik/noetic/amr_ws/devel:$CMAKE_PREFIX_PATH"
+export PWD='/home/hrithik/noetic/amr_ws/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/hrithik/noetic/amr_ws/devel/share/common-lisp'
+export ROS_PACKAGE_PATH="/home/hrithik/noetic/amr_ws/src:$ROS_PACKAGE_PATH"

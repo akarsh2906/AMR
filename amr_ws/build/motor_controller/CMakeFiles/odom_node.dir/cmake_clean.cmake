@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/irp2023/AMR/amr_ws/devel/lib/motor_controller/odom_node"
-  "/home/irp2023/AMR/amr_ws/devel/lib/motor_controller/odom_node.pdb"
+  "/home/hrithik/noetic/amr_ws/devel/lib/motor_controller/odom_node"
+  "/home/hrithik/noetic/amr_ws/devel/lib/motor_controller/odom_node.pdb"
   "CMakeFiles/odom_node.dir/scripts/odom_node.cpp.o"
 )
 
