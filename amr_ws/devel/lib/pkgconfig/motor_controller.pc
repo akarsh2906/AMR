@@ -1,4 +1,4 @@
-prefix=/home/hrithik/noetic/amr_ws/devel
+prefix=/home/hrithik/noetic/AMR/amr_ws/devel
 
 Name: motor_controller
 Description: Description of motor_controller
