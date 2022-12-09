@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/irp2023/Noetic/amr_ws/devel/lib/hector_mapping/hector_mapping"
-  "/home/irp2023/Noetic/amr_ws/devel/lib/hector_mapping/hector_mapping.pdb"
+  "/home/irp2023/AMR/amr_ws/devel/lib/hector_mapping/hector_mapping"
+  "/home/irp2023/AMR/amr_ws/devel/lib/hector_mapping/hector_mapping.pdb"
   "CMakeFiles/hector_mapping.dir/src/HectorMappingRos.cpp.o"
   "CMakeFiles/hector_mapping.dir/src/PoseInfoContainer.cpp.o"
   "CMakeFiles/hector_mapping.dir/src/main.cpp.o"

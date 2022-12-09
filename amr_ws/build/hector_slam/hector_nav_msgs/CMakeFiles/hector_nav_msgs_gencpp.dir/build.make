@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/irp2023/Noetic/amr_ws/src
+CMAKE_SOURCE_DIR = /home/irp2023/AMR/amr_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/irp2023/Noetic/amr_ws/build
+CMAKE_BINARY_DIR = /home/irp2023/AMR/amr_ws/build
 
 # Utility rule file for hector_nav_msgs_gencpp.
 
@@ -63,10 +63,10 @@ hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_gencpp.dir/build: hector_
 .PHONY : hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_gencpp.dir/build
 
 hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_gencpp.dir/clean:
-	cd /home/irp2023/Noetic/amr_ws/build/hector_slam/hector_nav_msgs && $(CMAKE_COMMAND) -P CMakeFiles/hector_nav_msgs_gencpp.dir/cmake_clean.cmake
+	cd /home/irp2023/AMR/amr_ws/build/hector_slam/hector_nav_msgs && $(CMAKE_COMMAND) -P CMakeFiles/hector_nav_msgs_gencpp.dir/cmake_clean.cmake
 .PHONY : hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_gencpp.dir/clean
 
 hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_gencpp.dir/depend:
-	cd /home/irp2023/Noetic/amr_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irp2023/Noetic/amr_ws/src /home/irp2023/Noetic/amr_ws/src/hector_slam/hector_nav_msgs /home/irp2023/Noetic/amr_ws/build /home/irp2023/Noetic/amr_ws/build/hector_slam/hector_nav_msgs /home/irp2023/Noetic/amr_ws/build/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_gencpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/irp2023/AMR/amr_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/irp2023/AMR/amr_ws/src /home/irp2023/AMR/amr_ws/src/hector_slam/hector_nav_msgs /home/irp2023/AMR/amr_ws/build /home/irp2023/AMR/amr_ws/build/hector_slam/hector_nav_msgs /home/irp2023/AMR/amr_ws/build/hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_gencpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hector_slam/hector_nav_msgs/CMakeFiles/hector_nav_msgs_gencpp.dir/depend
 

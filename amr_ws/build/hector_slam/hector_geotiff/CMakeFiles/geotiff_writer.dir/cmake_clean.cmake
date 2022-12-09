@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/irp2023/Noetic/amr_ws/devel/lib/libgeotiff_writer.pdb"
-  "/home/irp2023/Noetic/amr_ws/devel/lib/libgeotiff_writer.so"
+  "/home/irp2023/AMR/amr_ws/devel/lib/libgeotiff_writer.pdb"
+  "/home/irp2023/AMR/amr_ws/devel/lib/libgeotiff_writer.so"
   "CMakeFiles/geotiff_writer.dir/src/geotiff_writer/geotiff_writer.cpp.o"
 )
 

@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/irp2023/Noetic/amr_ws/devel/include/hector_nav_msgs/GetDistanceToObstacle.h"
-  "/home/irp2023/Noetic/amr_ws/devel/include/hector_nav_msgs/GetNormal.h"
-  "/home/irp2023/Noetic/amr_ws/devel/include/hector_nav_msgs/GetRecoveryInfo.h"
-  "/home/irp2023/Noetic/amr_ws/devel/include/hector_nav_msgs/GetRobotTrajectory.h"
-  "/home/irp2023/Noetic/amr_ws/devel/include/hector_nav_msgs/GetSearchPosition.h"
+  "/home/irp2023/AMR/amr_ws/devel/include/hector_nav_msgs/GetDistanceToObstacle.h"
+  "/home/irp2023/AMR/amr_ws/devel/include/hector_nav_msgs/GetNormal.h"
+  "/home/irp2023/AMR/amr_ws/devel/include/hector_nav_msgs/GetRecoveryInfo.h"
+  "/home/irp2023/AMR/amr_ws/devel/include/hector_nav_msgs/GetRobotTrajectory.h"
+  "/home/irp2023/AMR/amr_ws/devel/include/hector_nav_msgs/GetSearchPosition.h"
   "CMakeFiles/hector_nav_msgs_generate_messages_cpp"
 )
 

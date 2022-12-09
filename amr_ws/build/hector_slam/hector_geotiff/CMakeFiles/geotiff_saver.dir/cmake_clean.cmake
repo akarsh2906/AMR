@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/irp2023/Noetic/amr_ws/devel/lib/hector_geotiff/geotiff_saver"
-  "/home/irp2023/Noetic/amr_ws/devel/lib/hector_geotiff/geotiff_saver.pdb"
+  "/home/irp2023/AMR/amr_ws/devel/lib/hector_geotiff/geotiff_saver"
+  "/home/irp2023/AMR/amr_ws/devel/lib/hector_geotiff/geotiff_saver.pdb"
   "CMakeFiles/geotiff_saver.dir/src/geotiff_saver.cpp.o"
 )
 

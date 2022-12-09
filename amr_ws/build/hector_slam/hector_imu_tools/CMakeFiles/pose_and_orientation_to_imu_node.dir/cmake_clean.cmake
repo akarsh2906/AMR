@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/irp2023/Noetic/amr_ws/devel/lib/hector_imu_tools/pose_and_orientation_to_imu_node"
-  "/home/irp2023/Noetic/amr_ws/devel/lib/hector_imu_tools/pose_and_orientation_to_imu_node.pdb"
+  "/home/irp2023/AMR/amr_ws/devel/lib/hector_imu_tools/pose_and_orientation_to_imu_node"
+  "/home/irp2023/AMR/amr_ws/devel/lib/hector_imu_tools/pose_and_orientation_to_imu_node.pdb"
   "CMakeFiles/pose_and_orientation_to_imu_node.dir/src/pose_and_orientation_to_imu_node.cpp.o"
 )
 

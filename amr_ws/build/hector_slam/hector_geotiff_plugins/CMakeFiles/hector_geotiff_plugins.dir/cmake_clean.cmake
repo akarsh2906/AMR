@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/irp2023/Noetic/amr_ws/devel/lib/libhector_geotiff_plugins.pdb"
-  "/home/irp2023/Noetic/amr_ws/devel/lib/libhector_geotiff_plugins.so"
+  "/home/irp2023/AMR/amr_ws/devel/lib/libhector_geotiff_plugins.pdb"
+  "/home/irp2023/AMR/amr_ws/devel/lib/libhector_geotiff_plugins.so"
   "CMakeFiles/hector_geotiff_plugins.dir/src/trajectory_geotiff_plugin.cpp.o"
 )
 

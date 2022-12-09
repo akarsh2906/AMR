@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/irp2023/Noetic/amr_ws/src/rplidar_ros/src/client.cpp
+/home/irp2023/AMR/amr_ws/src/rplidar_ros/src/client.cpp
 ros/ros.h
-/home/irp2023/Noetic/amr_ws/src/rplidar_ros/src/ros/ros.h
+/home/irp2023/AMR/amr_ws/src/rplidar_ros/src/ros/ros.h
 sensor_msgs/LaserScan.h
-/home/irp2023/Noetic/amr_ws/src/rplidar_ros/src/sensor_msgs/LaserScan.h
+/home/irp2023/AMR/amr_ws/src/rplidar_ros/src/sensor_msgs/LaserScan.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

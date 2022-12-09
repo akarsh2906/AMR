@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/home/irp2023/Noetic/amr_ws/devel/include/hector_mapping/HectorDebugInfo.h"
-  "/home/irp2023/Noetic/amr_ws/devel/include/hector_mapping/HectorIterData.h"
-  "/home/irp2023/Noetic/amr_ws/devel/include/hector_mapping/ResetMapping.h"
+  "/home/irp2023/AMR/amr_ws/devel/include/hector_mapping/HectorDebugInfo.h"
+  "/home/irp2023/AMR/amr_ws/devel/include/hector_mapping/HectorIterData.h"
+  "/home/irp2023/AMR/amr_ws/devel/include/hector_mapping/ResetMapping.h"
   "CMakeFiles/hector_mapping_generate_messages_cpp"
 )
 

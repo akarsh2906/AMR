@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "/home/irp2023/Noetic/amr_ws/devel/lib/python3/dist-packages/hector_mapping/msg/_HectorDebugInfo.py"
-  "/home/irp2023/Noetic/amr_ws/devel/lib/python3/dist-packages/hector_mapping/msg/_HectorIterData.py"
-  "/home/irp2023/Noetic/amr_ws/devel/lib/python3/dist-packages/hector_mapping/msg/__init__.py"
-  "/home/irp2023/Noetic/amr_ws/devel/lib/python3/dist-packages/hector_mapping/srv/_ResetMapping.py"
-  "/home/irp2023/Noetic/amr_ws/devel/lib/python3/dist-packages/hector_mapping/srv/__init__.py"
+  "/home/irp2023/AMR/amr_ws/devel/lib/python3/dist-packages/hector_mapping/msg/_HectorDebugInfo.py"
+  "/home/irp2023/AMR/amr_ws/devel/lib/python3/dist-packages/hector_mapping/msg/_HectorIterData.py"
+  "/home/irp2023/AMR/amr_ws/devel/lib/python3/dist-packages/hector_mapping/msg/__init__.py"
+  "/home/irp2023/AMR/amr_ws/devel/lib/python3/dist-packages/hector_mapping/srv/_ResetMapping.py"
+  "/home/irp2023/AMR/amr_ws/devel/lib/python3/dist-packages/hector_mapping/srv/__init__.py"
   "CMakeFiles/hector_mapping_generate_messages_py"
 )
 

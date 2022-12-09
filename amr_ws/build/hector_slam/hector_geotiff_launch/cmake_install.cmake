@@ -1,8 +1,8 @@
-# Install script for directory: /home/irp2023/Noetic/amr_ws/src/hector_slam/hector_geotiff_launch
+# Install script for directory: /home/irp2023/AMR/amr_ws/src/hector_slam/hector_geotiff_launch
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/irp2023/Noetic/amr_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/irp2023/AMR/amr_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/irp2023/Noetic/amr_ws/build/hector_slam/hector_geotiff_launch/catkin_generated/installspace/hector_geotiff_launch.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/irp2023/AMR/amr_ws/build/hector_slam/hector_geotiff_launch/catkin_generated/installspace/hector_geotiff_launch.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_geotiff_launch/cmake" TYPE FILE FILES
-    "/home/irp2023/Noetic/amr_ws/build/hector_slam/hector_geotiff_launch/catkin_generated/installspace/hector_geotiff_launchConfig.cmake"
-    "/home/irp2023/Noetic/amr_ws/build/hector_slam/hector_geotiff_launch/catkin_generated/installspace/hector_geotiff_launchConfig-version.cmake"
+    "/home/irp2023/AMR/amr_ws/build/hector_slam/hector_geotiff_launch/catkin_generated/installspace/hector_geotiff_launchConfig.cmake"
+    "/home/irp2023/AMR/amr_ws/build/hector_slam/hector_geotiff_launch/catkin_generated/installspace/hector_geotiff_launchConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_geotiff_launch" TYPE FILE FILES "/home/irp2023/Noetic/amr_ws/src/hector_slam/hector_geotiff_launch/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_geotiff_launch" TYPE FILE FILES "/home/irp2023/AMR/amr_ws/src/hector_slam/hector_geotiff_launch/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_geotiff_launch" TYPE DIRECTORY FILES "/home/irp2023/Noetic/amr_ws/src/hector_slam/hector_geotiff_launch/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_geotiff_launch" TYPE DIRECTORY FILES "/home/irp2023/AMR/amr_ws/src/hector_slam/hector_geotiff_launch/launch")
 endif()
 

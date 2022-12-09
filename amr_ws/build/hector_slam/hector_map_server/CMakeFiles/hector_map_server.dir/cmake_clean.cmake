@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/irp2023/Noetic/amr_ws/devel/lib/hector_map_server/hector_map_server"
-  "/home/irp2023/Noetic/amr_ws/devel/lib/hector_map_server/hector_map_server.pdb"
+  "/home/irp2023/AMR/amr_ws/devel/lib/hector_map_server/hector_map_server"
+  "/home/irp2023/AMR/amr_ws/devel/lib/hector_map_server/hector_map_server.pdb"
   "CMakeFiles/hector_map_server.dir/src/hector_map_server.cpp.o"
 )
 

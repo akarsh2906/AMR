@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/irp2023/Noetic/amr_ws/src/motor_controller/scripts/odom_node.cpp
+/home/irp2023/AMR/amr_ws/src/motor_controller/scripts/odom_node.cpp
 math.h
 -
 ros/ros.h
-/home/irp2023/Noetic/amr_ws/src/motor_controller/scripts/ros/ros.h
+/home/irp2023/AMR/amr_ws/src/motor_controller/scripts/ros/ros.h
 tf/transform_broadcaster.h
-/home/irp2023/Noetic/amr_ws/src/motor_controller/scripts/tf/transform_broadcaster.h
+/home/irp2023/AMR/amr_ws/src/motor_controller/scripts/tf/transform_broadcaster.h
 nav_msgs/Odometry.h
-/home/irp2023/Noetic/amr_ws/src/motor_controller/scripts/nav_msgs/Odometry.h
+/home/irp2023/AMR/amr_ws/src/motor_controller/scripts/nav_msgs/Odometry.h
 geometry_msgs/Vector3Stamped.h
-/home/irp2023/Noetic/amr_ws/src/motor_controller/scripts/geometry_msgs/Vector3Stamped.h
+/home/irp2023/AMR/amr_ws/src/motor_controller/scripts/geometry_msgs/Vector3Stamped.h
 
 /opt/ros/noetic/include/geometry_msgs/Point.h
 string

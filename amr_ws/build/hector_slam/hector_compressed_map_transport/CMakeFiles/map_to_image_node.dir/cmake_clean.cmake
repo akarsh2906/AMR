@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/irp2023/Noetic/amr_ws/devel/lib/hector_compressed_map_transport/map_to_image_node"
-  "/home/irp2023/Noetic/amr_ws/devel/lib/hector_compressed_map_transport/map_to_image_node.pdb"
+  "/home/irp2023/AMR/amr_ws/devel/lib/hector_compressed_map_transport/map_to_image_node"
+  "/home/irp2023/AMR/amr_ws/devel/lib/hector_compressed_map_transport/map_to_image_node.pdb"
   "CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o"
 )
 

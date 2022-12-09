@@ -1,8 +1,8 @@
-# Install script for directory: /home/irp2023/Noetic/amr_ws/src/motor_controller
+# Install script for directory: /home/irp2023/AMR/amr_ws/src/motor_controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/irp2023/Noetic/amr_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/irp2023/AMR/amr_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/irp2023/Noetic/amr_ws/build/motor_controller/catkin_generated/installspace/motor_controller.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/irp2023/AMR/amr_ws/build/motor_controller/catkin_generated/installspace/motor_controller.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/motor_controller/cmake" TYPE FILE FILES
-    "/home/irp2023/Noetic/amr_ws/build/motor_controller/catkin_generated/installspace/motor_controllerConfig.cmake"
-    "/home/irp2023/Noetic/amr_ws/build/motor_controller/catkin_generated/installspace/motor_controllerConfig-version.cmake"
+    "/home/irp2023/AMR/amr_ws/build/motor_controller/catkin_generated/installspace/motor_controllerConfig.cmake"
+    "/home/irp2023/AMR/amr_ws/build/motor_controller/catkin_generated/installspace/motor_controllerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/motor_controller" TYPE FILE FILES "/home/irp2023/Noetic/amr_ws/src/motor_controller/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/motor_controller" TYPE FILE FILES "/home/irp2023/AMR/amr_ws/src/motor_controller/package.xml")
 endif()
 

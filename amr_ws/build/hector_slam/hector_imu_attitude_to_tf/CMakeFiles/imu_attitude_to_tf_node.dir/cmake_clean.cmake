@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/irp2023/Noetic/amr_ws/devel/lib/hector_imu_attitude_to_tf/imu_attitude_to_tf_node"
-  "/home/irp2023/Noetic/amr_ws/devel/lib/hector_imu_attitude_to_tf/imu_attitude_to_tf_node.pdb"
+  "/home/irp2023/AMR/amr_ws/devel/lib/hector_imu_attitude_to_tf/imu_attitude_to_tf_node"
+  "/home/irp2023/AMR/amr_ws/devel/lib/hector_imu_attitude_to_tf/imu_attitude_to_tf_node.pdb"
   "CMakeFiles/imu_attitude_to_tf_node.dir/src/imu_attitude_to_tf_node.cpp.o"
 )
 

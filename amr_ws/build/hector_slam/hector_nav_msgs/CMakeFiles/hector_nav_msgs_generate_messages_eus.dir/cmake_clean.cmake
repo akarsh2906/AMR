@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "/home/irp2023/Noetic/amr_ws/devel/share/roseus/ros/hector_nav_msgs/manifest.l"
-  "/home/irp2023/Noetic/amr_ws/devel/share/roseus/ros/hector_nav_msgs/srv/GetDistanceToObstacle.l"
-  "/home/irp2023/Noetic/amr_ws/devel/share/roseus/ros/hector_nav_msgs/srv/GetNormal.l"
-  "/home/irp2023/Noetic/amr_ws/devel/share/roseus/ros/hector_nav_msgs/srv/GetRecoveryInfo.l"
-  "/home/irp2023/Noetic/amr_ws/devel/share/roseus/ros/hector_nav_msgs/srv/GetRobotTrajectory.l"
-  "/home/irp2023/Noetic/amr_ws/devel/share/roseus/ros/hector_nav_msgs/srv/GetSearchPosition.l"
+  "/home/irp2023/AMR/amr_ws/devel/share/roseus/ros/hector_nav_msgs/manifest.l"
+  "/home/irp2023/AMR/amr_ws/devel/share/roseus/ros/hector_nav_msgs/srv/GetDistanceToObstacle.l"
+  "/home/irp2023/AMR/amr_ws/devel/share/roseus/ros/hector_nav_msgs/srv/GetNormal.l"
+  "/home/irp2023/AMR/amr_ws/devel/share/roseus/ros/hector_nav_msgs/srv/GetRecoveryInfo.l"
+  "/home/irp2023/AMR/amr_ws/devel/share/roseus/ros/hector_nav_msgs/srv/GetRobotTrajectory.l"
+  "/home/irp2023/AMR/amr_ws/devel/share/roseus/ros/hector_nav_msgs/srv/GetSearchPosition.l"
   "CMakeFiles/hector_nav_msgs_generate_messages_eus"
 )
 

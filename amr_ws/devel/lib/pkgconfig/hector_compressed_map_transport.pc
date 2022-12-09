@@ -1,4 +1,4 @@
-prefix=/home/irp2023/Noetic/amr_ws/devel
+prefix=/home/irp2023/AMR/amr_ws/devel
 
 Name: hector_compressed_map_transport
 Description: Description of hector_compressed_map_transport
