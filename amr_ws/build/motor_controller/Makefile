@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+motor_controller/CMakeFiles/pose_goal_pub.dir/rule:
+	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_controller/CMakeFiles/pose_goal_pub.dir/rule
+.PHONY : motor_controller/CMakeFiles/pose_goal_pub.dir/rule
+
+# Convenience name for target.
+pose_goal_pub: motor_controller/CMakeFiles/pose_goal_pub.dir/rule
+
+.PHONY : pose_goal_pub
+
+# fast build rule for target.
+pose_goal_pub/fast:
+	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/pose_goal_pub.dir/build.make motor_controller/CMakeFiles/pose_goal_pub.dir/build
+.PHONY : pose_goal_pub/fast
+
+# Convenience name for target.
 motor_controller/CMakeFiles/odom_node1.dir/rule:
 	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_controller/CMakeFiles/odom_node1.dir/rule
 .PHONY : motor_controller/CMakeFiles/odom_node1.dir/rule
@@ -251,6 +266,33 @@ scripts/odom_node1.cpp.s:
 	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/odom_node1.dir/build.make motor_controller/CMakeFiles/odom_node1.dir/scripts/odom_node1.cpp.s
 .PHONY : scripts/odom_node1.cpp.s
 
+scripts/pose_goal_pub.o: scripts/pose_goal_pub.cpp.o
+
+.PHONY : scripts/pose_goal_pub.o
+
+# target to build an object file
+scripts/pose_goal_pub.cpp.o:
+	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/pose_goal_pub.dir/build.make motor_controller/CMakeFiles/pose_goal_pub.dir/scripts/pose_goal_pub.cpp.o
+.PHONY : scripts/pose_goal_pub.cpp.o
+
+scripts/pose_goal_pub.i: scripts/pose_goal_pub.cpp.i
+
+.PHONY : scripts/pose_goal_pub.i
+
+# target to preprocess a source file
+scripts/pose_goal_pub.cpp.i:
+	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/pose_goal_pub.dir/build.make motor_controller/CMakeFiles/pose_goal_pub.dir/scripts/pose_goal_pub.cpp.i
+.PHONY : scripts/pose_goal_pub.cpp.i
+
+scripts/pose_goal_pub.s: scripts/pose_goal_pub.cpp.s
+
+.PHONY : scripts/pose_goal_pub.s
+
+# target to generate assembly for a file
+scripts/pose_goal_pub.cpp.s:
+	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/pose_goal_pub.dir/build.make motor_controller/CMakeFiles/pose_goal_pub.dir/scripts/pose_goal_pub.cpp.s
+.PHONY : scripts/pose_goal_pub.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -261,6 +303,7 @@ help:
 	@echo "... install/local"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... pose_goal_pub"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
@@ -272,6 +315,9 @@ help:
 	@echo "... scripts/odom_node1.o"
 	@echo "... scripts/odom_node1.i"
 	@echo "... scripts/odom_node1.s"
+	@echo "... scripts/pose_goal_pub.o"
+	@echo "... scripts/pose_goal_pub.i"
+	@echo "... scripts/pose_goal_pub.s"
 .PHONY : help
 
 

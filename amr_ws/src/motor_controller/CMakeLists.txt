@@ -139,7 +139,7 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/motor_controller_node.cpp)
 add_executable(odom_node scripts/odom_node.cpp)
 add_executable(odom_node1 scripts/odom_node1.cpp)
-
+add_executable(pose_goal_pub scripts/pose_goal_pub.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -156,6 +156,7 @@ add_executable(odom_node1 scripts/odom_node1.cpp)
 # )
 target_link_libraries(odom_node ${catkin_LIBRARIES})
 target_link_libraries(odom_node1 ${catkin_LIBRARIES})
+target_link_libraries(pose_goal_pub ${catkin_LIBRARIES})
 #############
 ## Install ##
 #############

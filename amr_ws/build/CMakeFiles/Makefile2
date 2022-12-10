@@ -70,6 +70,7 @@ all: hector_slam/hector_map_server/all
 all: hector_slam/hector_trajectory_server/all
 all: hector_slam/hector_mapping/all
 all: motor_controller/all
+all: urdfamrv2/all
 
 .PHONY : all
 
@@ -91,6 +92,7 @@ preinstall: hector_slam/hector_map_server/preinstall
 preinstall: hector_slam/hector_trajectory_server/preinstall
 preinstall: hector_slam/hector_mapping/preinstall
 preinstall: motor_controller/preinstall
+preinstall: urdfamrv2/preinstall
 
 .PHONY : preinstall
 
@@ -117,6 +119,7 @@ clean: hector_slam/hector_map_server/clean
 clean: hector_slam/hector_trajectory_server/clean
 clean: hector_slam/hector_mapping/clean
 clean: motor_controller/clean
+clean: urdfamrv2/clean
 
 .PHONY : clean
 
@@ -525,6 +528,7 @@ hector_slam/hector_trajectory_server/clean: hector_slam/hector_trajectory_server
 # Directory level rules for directory motor_controller
 
 # Recursive "all" directory target.
+motor_controller/all: motor_controller/CMakeFiles/pose_goal_pub.dir/all
 motor_controller/all: motor_controller/CMakeFiles/odom_node1.dir/all
 motor_controller/all: motor_controller/CMakeFiles/odom_node.dir/all
 
@@ -536,6 +540,7 @@ motor_controller/preinstall:
 .PHONY : motor_controller/preinstall
 
 # Recursive "clean" directory target.
+motor_controller/clean: motor_controller/CMakeFiles/pose_goal_pub.dir/clean
 motor_controller/clean: motor_controller/CMakeFiles/odom_node1.dir/clean
 motor_controller/clean: motor_controller/CMakeFiles/odom_node.dir/clean
 
@@ -560,6 +565,24 @@ rplidar_ros/clean: rplidar_ros/CMakeFiles/rplidarNodeClient.dir/clean
 rplidar_ros/clean: rplidar_ros/CMakeFiles/rplidarNode.dir/clean
 
 .PHONY : rplidar_ros/clean
+
+#=============================================================================
+# Directory level rules for directory urdfamrv2
+
+# Recursive "all" directory target.
+urdfamrv2/all:
+
+.PHONY : urdfamrv2/all
+
+# Recursive "preinstall" directory target.
+urdfamrv2/preinstall:
+
+.PHONY : urdfamrv2/preinstall
+
+# Recursive "clean" directory target.
+urdfamrv2/clean:
+
+.PHONY : urdfamrv2/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
@@ -2668,7 +2691,7 @@ hector_slam/hector_compressed_map_transport/CMakeFiles/sensor_msgs_generate_mess
 rplidar_ros/CMakeFiles/rplidarNodeClient.dir/all:
 	$(MAKE) -f rplidar_ros/CMakeFiles/rplidarNodeClient.dir/build.make rplidar_ros/CMakeFiles/rplidarNodeClient.dir/depend
 	$(MAKE) -f rplidar_ros/CMakeFiles/rplidarNodeClient.dir/build.make rplidar_ros/CMakeFiles/rplidarNodeClient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=87,88 "Built target rplidarNodeClient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=89,90 "Built target rplidarNodeClient"
 .PHONY : rplidar_ros/CMakeFiles/rplidarNodeClient.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2695,7 +2718,7 @@ rplidar_ros/CMakeFiles/rplidarNodeClient.dir/clean:
 rplidar_ros/CMakeFiles/rplidarNode.dir/all:
 	$(MAKE) -f rplidar_ros/CMakeFiles/rplidarNode.dir/build.make rplidar_ros/CMakeFiles/rplidarNode.dir/depend
 	$(MAKE) -f rplidar_ros/CMakeFiles/rplidarNode.dir/build.make rplidar_ros/CMakeFiles/rplidarNode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=80,81,82,83,84,85,86 "Built target rplidarNode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=82,83,84,85,86,87,88 "Built target rplidarNode"
 .PHONY : rplidar_ros/CMakeFiles/rplidarNode.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3899,6 +3922,33 @@ hector_mapping_generate_messages_eus: hector_slam/hector_mapping/CMakeFiles/hect
 hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_eus.dir/clean:
 	$(MAKE) -f hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_eus.dir/build.make hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_eus.dir/clean
 .PHONY : hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target motor_controller/CMakeFiles/pose_goal_pub.dir
+
+# All Build rule for target.
+motor_controller/CMakeFiles/pose_goal_pub.dir/all:
+	$(MAKE) -f motor_controller/CMakeFiles/pose_goal_pub.dir/build.make motor_controller/CMakeFiles/pose_goal_pub.dir/depend
+	$(MAKE) -f motor_controller/CMakeFiles/pose_goal_pub.dir/build.make motor_controller/CMakeFiles/pose_goal_pub.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=80,81 "Built target pose_goal_pub"
+.PHONY : motor_controller/CMakeFiles/pose_goal_pub.dir/all
+
+# Build rule for subdir invocation for target.
+motor_controller/CMakeFiles/pose_goal_pub.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irp2023/AMR/amr_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 motor_controller/CMakeFiles/pose_goal_pub.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irp2023/AMR/amr_ws/build/CMakeFiles 0
+.PHONY : motor_controller/CMakeFiles/pose_goal_pub.dir/rule
+
+# Convenience name for target.
+pose_goal_pub: motor_controller/CMakeFiles/pose_goal_pub.dir/rule
+
+.PHONY : pose_goal_pub
+
+# clean rule for target.
+motor_controller/CMakeFiles/pose_goal_pub.dir/clean:
+	$(MAKE) -f motor_controller/CMakeFiles/pose_goal_pub.dir/build.make motor_controller/CMakeFiles/pose_goal_pub.dir/clean
+.PHONY : motor_controller/CMakeFiles/pose_goal_pub.dir/clean
 
 #=============================================================================
 # Target rules for target motor_controller/CMakeFiles/odom_node1.dir

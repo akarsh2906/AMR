@@ -147,6 +147,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/irp2023/AMR/amr_ws/build/hector_slam/hector_trajectory_server/cmake_install.cmake")
   include("/home/irp2023/AMR/amr_ws/build/hector_slam/hector_mapping/cmake_install.cmake")
   include("/home/irp2023/AMR/amr_ws/build/motor_controller/cmake_install.cmake")
+  include("/home/irp2023/AMR/amr_ws/build/urdfamrv2/cmake_install.cmake")
 
 endif()
 

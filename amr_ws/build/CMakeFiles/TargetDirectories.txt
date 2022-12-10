@@ -247,8 +247,16 @@
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/install/local.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/edit_cache.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/test.dir
+/home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/pose_goal_pub.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/install.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/list_install_components.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/rebuild_cache.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/odom_node1.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/odom_node.dir
+/home/irp2023/AMR/amr_ws/build/urdfamrv2/CMakeFiles/install/strip.dir
+/home/irp2023/AMR/amr_ws/build/urdfamrv2/CMakeFiles/install/local.dir
+/home/irp2023/AMR/amr_ws/build/urdfamrv2/CMakeFiles/install.dir
+/home/irp2023/AMR/amr_ws/build/urdfamrv2/CMakeFiles/list_install_components.dir
+/home/irp2023/AMR/amr_ws/build/urdfamrv2/CMakeFiles/rebuild_cache.dir
+/home/irp2023/AMR/amr_ws/build/urdfamrv2/CMakeFiles/edit_cache.dir
+/home/irp2023/AMR/amr_ws/build/urdfamrv2/CMakeFiles/test.dir

@@ -1624,6 +1624,19 @@ hector_mapping_generate_messages_eus/fast:
 .PHONY : hector_mapping_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named pose_goal_pub
+
+# Build rule for target.
+pose_goal_pub: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pose_goal_pub
+.PHONY : pose_goal_pub
+
+# fast build rule for target.
+pose_goal_pub/fast:
+	$(MAKE) -f motor_controller/CMakeFiles/pose_goal_pub.dir/build.make motor_controller/CMakeFiles/pose_goal_pub.dir/build
+.PHONY : pose_goal_pub/fast
+
+#=============================================================================
 # Target rules for targets named odom_node1
 
 # Build rule for target.
@@ -1774,6 +1787,7 @@ help:
 	@echo "... _hector_mapping_generate_messages_check_deps_ResetMapping"
 	@echo "... hector_mapping_genlisp"
 	@echo "... hector_mapping_generate_messages_eus"
+	@echo "... pose_goal_pub"
 	@echo "... odom_node1"
 	@echo "... odom_node"
 .PHONY : help
