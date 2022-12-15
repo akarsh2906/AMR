@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/akarsh/AMR/amr_ws/src/motor_controller/scripts/pose_goal_pub.cpp
+/home/irp2023/AMR/amr_ws/src/motor_controller/scripts/pose_goal_pub.cpp
 ros/ros.h
-/home/akarsh/AMR/amr_ws/src/motor_controller/scripts/ros/ros.h
+/home/irp2023/AMR/amr_ws/src/motor_controller/scripts/ros/ros.h
 geometry_msgs/PoseStamped.h
-/home/akarsh/AMR/amr_ws/src/motor_controller/scripts/geometry_msgs/PoseStamped.h
+/home/irp2023/AMR/amr_ws/src/motor_controller/scripts/geometry_msgs/PoseStamped.h
 geometry_msgs/PoseWithCovarianceStamped.h
-/home/akarsh/AMR/amr_ws/src/motor_controller/scripts/geometry_msgs/PoseWithCovarianceStamped.h
+/home/irp2023/AMR/amr_ws/src/motor_controller/scripts/geometry_msgs/PoseWithCovarianceStamped.h
 tf/transform_broadcaster.h
 -
 iostream

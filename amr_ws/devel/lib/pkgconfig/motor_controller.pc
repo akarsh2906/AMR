@@ -1,4 +1,4 @@
-prefix=/home/akarsh/AMR/amr_ws/devel
+prefix=/home/irp2023/AMR/amr_ws/devel
 
 Name: motor_controller
 Description: Description of motor_controller

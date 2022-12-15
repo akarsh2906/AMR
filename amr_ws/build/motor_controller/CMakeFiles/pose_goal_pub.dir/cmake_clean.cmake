@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/akarsh/AMR/amr_ws/devel/lib/motor_controller/pose_goal_pub"
-  "/home/akarsh/AMR/amr_ws/devel/lib/motor_controller/pose_goal_pub.pdb"
+  "/home/irp2023/AMR/amr_ws/devel/lib/motor_controller/pose_goal_pub"
+  "/home/irp2023/AMR/amr_ws/devel/lib/motor_controller/pose_goal_pub.pdb"
   "CMakeFiles/pose_goal_pub.dir/scripts/pose_goal_pub.cpp.o"
 )
 
