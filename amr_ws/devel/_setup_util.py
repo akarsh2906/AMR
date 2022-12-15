@@ -268,7 +268,7 @@ if __name__ == '__main__':
 
         if not args.local:
             # environment at generation time
-            CMAKE_PREFIX_PATH = r'/opt/ros/noetic'.split(';')
+            CMAKE_PREFIX_PATH = r'/home/akarsh/AMR/amr_ws/devel;/opt/ros/noetic;/home/akarsh/ros2_ws/install/my_cpp_pkg'.split(';')
         else:
             # don't consider any other prefix path than this one
             CMAKE_PREFIX_PATH = []

@@ -7,4 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export PWD='/home/irp2023/AMR/amr_ws/build'
+export PWD='/home/akarsh/AMR/amr_ws/build'
+export ROS_PACKAGE_PATH='/home/hrithik/noetic/amr_ws/src:/home/hrithik/noetic/AMR/amr_ws/src:/home/akarsh/AMR/amr_ws/src:/opt/ros/noetic/share'

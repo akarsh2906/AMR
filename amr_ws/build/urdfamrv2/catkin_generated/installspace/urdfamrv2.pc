@@ -1,8 +1,0 @@
-prefix=/home/irp2023/AMR/amr_ws/install
-
-Name: urdfamrv2
-Description: Description of urdfamrv2
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
