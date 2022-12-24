@@ -212,48 +212,6 @@ odom_node1/fast:
 	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/odom_node1.dir/build.make motor_controller/CMakeFiles/odom_node1.dir/build
 .PHONY : odom_node1/fast
 
-# Convenience name for target.
-motor_controller/CMakeFiles/odom_node.dir/rule:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_controller/CMakeFiles/odom_node.dir/rule
-.PHONY : motor_controller/CMakeFiles/odom_node.dir/rule
-
-# Convenience name for target.
-odom_node: motor_controller/CMakeFiles/odom_node.dir/rule
-
-.PHONY : odom_node
-
-# fast build rule for target.
-odom_node/fast:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/odom_node.dir/build.make motor_controller/CMakeFiles/odom_node.dir/build
-.PHONY : odom_node/fast
-
-scripts/odom_node.o: scripts/odom_node.cpp.o
-
-.PHONY : scripts/odom_node.o
-
-# target to build an object file
-scripts/odom_node.cpp.o:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/odom_node.dir/build.make motor_controller/CMakeFiles/odom_node.dir/scripts/odom_node.cpp.o
-.PHONY : scripts/odom_node.cpp.o
-
-scripts/odom_node.i: scripts/odom_node.cpp.i
-
-.PHONY : scripts/odom_node.i
-
-# target to preprocess a source file
-scripts/odom_node.cpp.i:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/odom_node.dir/build.make motor_controller/CMakeFiles/odom_node.dir/scripts/odom_node.cpp.i
-.PHONY : scripts/odom_node.cpp.i
-
-scripts/odom_node.s: scripts/odom_node.cpp.s
-
-.PHONY : scripts/odom_node.s
-
-# target to generate assembly for a file
-scripts/odom_node.cpp.s:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/odom_node.dir/build.make motor_controller/CMakeFiles/odom_node.dir/scripts/odom_node.cpp.s
-.PHONY : scripts/odom_node.cpp.s
-
 scripts/odom_node1.o: scripts/odom_node1.cpp.o
 
 .PHONY : scripts/odom_node1.o
@@ -351,10 +309,6 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... odom_node1"
-	@echo "... odom_node"
-	@echo "... scripts/odom_node.o"
-	@echo "... scripts/odom_node.i"
-	@echo "... scripts/odom_node.s"
 	@echo "... scripts/odom_node1.o"
 	@echo "... scripts/odom_node1.i"
 	@echo "... scripts/odom_node1.s"

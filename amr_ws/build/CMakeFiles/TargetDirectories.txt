@@ -253,7 +253,6 @@
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/list_install_components.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/rebuild_cache.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/odom_node1.dir
-/home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/odom_node.dir
 /home/irp2023/AMR/amr_ws/build/urdfamrv2/CMakeFiles/install/strip.dir
 /home/irp2023/AMR/amr_ws/build/urdfamrv2/CMakeFiles/install/local.dir
 /home/irp2023/AMR/amr_ws/build/urdfamrv2/CMakeFiles/install.dir

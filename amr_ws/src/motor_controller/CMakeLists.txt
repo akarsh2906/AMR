@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(motor_controller)
 
-## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
+##Compile as C++11, supported in ROS Kinetic and newer
+add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -137,7 +137,7 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/motor_controller_node.cpp)
-add_executable(odom_node scripts/odom_node.cpp)
+#add_executable(odom_node scripts/odom_node.cpp)
 add_executable(odom_node1 scripts/odom_node1.cpp)
 add_executable(odom_node2 scripts/odom_node2.cpp)
 add_executable(pose_goal_pub scripts/pose_goal_pub.cpp)
@@ -155,7 +155,7 @@ add_executable(pose_goal_pub scripts/pose_goal_pub.cpp)
 # target_link_libraries(${PROJECT_NAME}_node
 #   ${catkin_LIBRARIES}
 # )
-target_link_libraries(odom_node ${catkin_LIBRARIES})
+#target_link_libraries(odom_node ${catkin_LIBRARIES})
 target_link_libraries(odom_node1 ${catkin_LIBRARIES})
 target_link_libraries(odom_node2 ${catkin_LIBRARIES})
 target_link_libraries(pose_goal_pub ${catkin_LIBRARIES})

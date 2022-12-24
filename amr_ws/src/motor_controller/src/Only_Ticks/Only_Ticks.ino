@@ -33,6 +33,7 @@ void loop() {
   motors_ticks_msg.vector.y = encoder1Pos;
   motors_tick_pub.publish(&motors_ticks_msg);
   nh.spinOnce();
+  delay(20);
 }
 
 // ************** encoders interrupts **************

@@ -11,7 +11,9 @@ double th=0,delta_th=0;
 const double pi=3.141592;
 double x=0,y=0,delta_x=0,delta_y=0;
 double vx=0,vy=0,vth=0;
-double v_left=0,v_right=0;	
+double v_left=0,v_right=0;
+
+//ros::Rate loop_rate(50);	
 
 //boost::shared_ptr<tf::TransformBroadcaster> transform_ptr;
 //tf::TransformBroadcaster odom_broadcaster;
@@ -27,7 +29,7 @@ void ConstructandPublish(double xx,double yy,double ww,double spx,double spy,dou
     geometry_msgs::TransformStamped odom_trans;
     odom_trans.header.stamp = current_time;
     odom_trans.header.frame_id = "odom";
-    odom_trans.child_frame_id = "base_footprint";
+    odom_trans.child_frame_id = "base_link";
     odom_trans.transform.translation.x = xx;
     odom_trans.transform.translation.y = yy;
     odom_trans.transform.translation.z = 0.0;
@@ -41,7 +43,7 @@ void ConstructandPublish(double xx,double yy,double ww,double spx,double spy,dou
     odom.pose.pose.position.z=0.0;
     odom.pose.pose.orientation=odom_quat;
 
-    odom.child_frame_id="base_footprint";
+    odom.child_frame_id="base_link";
     odom.twist.twist.linear.x=spx;
     odom.twist.twist.linear.y=spy;
     odom.twist.twist.angular.z=spz;
@@ -87,5 +89,6 @@ int main(int argc, char** argv){
   odom_pub=n.advertise<nav_msgs::Odometry>("odom",50);
   ros::Subscriber tick_sub=n.subscribe("motors_ticks",100,tickCB);
   ros::spin();
+  //loop_rate.sleep();
   return 0;
 }

@@ -1662,19 +1662,6 @@ odom_node1/fast:
 	$(MAKE) -f motor_controller/CMakeFiles/odom_node1.dir/build.make motor_controller/CMakeFiles/odom_node1.dir/build
 .PHONY : odom_node1/fast
 
-#=============================================================================
-# Target rules for targets named odom_node
-
-# Build rule for target.
-odom_node: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 odom_node
-.PHONY : odom_node
-
-# fast build rule for target.
-odom_node/fast:
-	$(MAKE) -f motor_controller/CMakeFiles/odom_node.dir/build.make motor_controller/CMakeFiles/odom_node.dir/build
-.PHONY : odom_node/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1803,7 +1790,6 @@ help:
 	@echo "... pose_goal_pub"
 	@echo "... odom_node2"
 	@echo "... odom_node1"
-	@echo "... odom_node"
 .PHONY : help
 
 

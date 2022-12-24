@@ -1,15 +1,15 @@
 <launch>
   <node pkg="rosserial_python" type="serial_node.py" name="arduino_uno" args="/dev/ttyACM0" />
   <node pkg="rosserial_python" type="serial_node.py" name="arduino_mega" args="/dev/ttyACM1" />
-  <node pkg="motor_controller" type="odom_node1" name="odometry_publisher" />
+  <node pkg="motor_controller" type="odom_node2" name="odometry_publisher" />
   <node pkg="motor_controller" type="pose_goal_pub" name="Pose_Goal_Publisher" />
 
   <!-- Transformation Configuration ... Setting Up the Relationships Between Coordinate Frames --> 
-  <!-- node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" args="0.24 0 0.147 0 0 0 base_link laser 30" -->
-  <node pkg="tf" type="static_transform_publisher" name="base_link_broadcaster" args="0 0 0.021 0 0 0 base_footprint base_link 30" />
+  <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" args="0.24 0 0 1.571 0 0 base_link laser 30" />
+  <node pkg="tf" type="static_transform_publisher" name="base_link_broadcaster" args="0 0 0.173 0 0 0 base_footprint base_link 30" />
   <!-- odom to base_footprint transform will be provided by the robot_pose_ekf node -->
   <!-- map to odom will be provided by the AMCL -->
-  <node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 map odom 30" />
+  <!-- node pkg="tf" type="static_transform_publisher" name="map_to_odom" args="0 0 0 0 0 0 map odom 30" -->
 
   <!-- Lidar Data Publisher Using RPLIDAR from Slamtec -->
   <!-- Used for obstacle avoidance and can be used for mapping --> 
@@ -24,7 +24,7 @@
   </node> 
   
   !-- Map File -->
-  <arg name="map_file" default="$(find motor_controller)/map/irp_lobby.yaml"/>
+  <arg name="map_file" default="$(find motor_controller)/map/irpstyle2.yaml"/>
 	
   <!-- Map Server -->
   <!-- Publish: /map, /map_metadata -->
@@ -35,6 +35,11 @@
   <!-- Subscribe: /scan, /tf, /initialpose, /map -->
   <!-- Publish: /amcl_pose, /particlecloud, /tf -->
   <include file="$(find amcl)/examples/amcl_diff.launch" />
+    <param name="base_frame_id" type="string" value="base_link" />
+    <param name="transform_tolerance"       value="1.0"/>
+    <param name="update_min_a" type="double" value="0.2" />
+    <param name="Update_min_d" type="double" value="0.05" />
+    <param name="odom_frame_id" type="string" value="odom" />
 
 
   <!-- Move Base Node -->
@@ -46,6 +51,7 @@
     <rosparam file="$(find motor_controller)/config/local_costmap_params.yaml" command="load" ns="local_costmap" />
     <rosparam file="$(find motor_controller)/config/global_costmap_params.yaml" command="load" ns="global_costmap" />
     <rosparam file="$(find motor_controller)/config/base_local_planner_params.yaml" command="load" />
+    <param name="controller_frequency" value="0.5"/>
   </node>
 
 
