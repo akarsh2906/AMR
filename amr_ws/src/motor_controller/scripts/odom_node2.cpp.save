@@ -30,7 +30,7 @@ void ConstructandPublish(double xx,double yy,double ww,double spx,double spy,dou
     geometry_msgs::TransformStamped odom_trans;
     odom_trans.header.stamp = current_time;
     odom_trans.header.frame_id = "odom";
-    odom_trans.child_frame_id = "base_footprint";
+    odom_trans.child_frame_id = "base_link";
     odom_trans.transform.translation.x = xx;
     odom_trans.transform.translation.y = yy;
     odom_trans.transform.translation.z = 0.0;
@@ -44,7 +44,7 @@ void ConstructandPublish(double xx,double yy,double ww,double spx,double spy,dou
     odom.pose.pose.position.z=0.0;
     odom.pose.pose.orientation=odom_quat;
 
-    odom.child_frame_id="base_footprint";
+    odom.child_frame_id="base_link";
     odom.twist.twist.linear.x=spx;
     odom.twist.twist.linear.y=spy;
     odom.twist.twist.angular.z=spz;
@@ -55,7 +55,7 @@ void ConstructandPublish(double xx,double yy,double ww,double spx,double spy,dou
 void tickCB(geometry_msgs::Vector3Stamped tick_msg){
     current_time=ros::Time::now();
     static tf::TransformBroadcaster odom_broadcaster;
-    if((current_time-prev_time).toSec()>=0.05){
+    //if((current_time-prev_time).toSec()>=0.05){
         time_diff=(current_time-prev_time).toSec();
         prev_time=current_time;
         l_diff=tick_msg.vector.x - left_tick;
@@ -67,10 +67,10 @@ void tickCB(geometry_msgs::Vector3Stamped tick_msg){
         vx = ((v_right + v_left) / 2);
         vy = 0;
         vth = ((v_right - v_left)/0.410);
-
+        
         delta_th = vth * time_diff;
-        th += delta_th;
-        delta_x = (vx * cos(th)) * time_diff;
+        
+delta_x = (vx * cos(th)) * time_diff;
         delta_y = (vx * sin(th)) * time_diff;
         //delta_th = vth * time_diff;
 
@@ -82,7 +82,7 @@ void tickCB(geometry_msgs::Vector3Stamped tick_msg){
         right_tick=tick_msg.vector.y;
         
         ConstructandPublish(x,y,th,vx,vy,vth, odom_broadcaster);
-    }
+   // }
 }
 
 
