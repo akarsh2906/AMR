@@ -10,7 +10,7 @@ from std_srvs.srv import Empty
 MAX_LINEAR_VEL = 0.25
 MAX_ANGULAR_VEL = 1
 
-NO_OF_ROTATIONS = 4
+NO_OF_ROTATIONS = 8
 
 quat_x = None
 quat_y = None 
@@ -54,7 +54,7 @@ if __name__ == "__main__":
     rospy.init_node("localizer")
     rospy.loginfo("Global Localization Has Started.")
 
-    cmd_vel_pub = rospy.Publisher("cmd_vel", Twist, queue_size=10)
+    cmd_vel_pub = rospy.Publisher("cmd_vel_des", Twist, queue_size=10)
     rate = rospy.Rate(30)
     delay = rospy.Rate(1)
 

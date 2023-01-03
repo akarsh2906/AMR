@@ -20,6 +20,7 @@ class pfd {
       // initObj === null is a special case for deserialization where we don't initialize fields
       this.distance = null;
       this.angle = null;
+      this.status = null;
     }
     else {
       if (initObj.hasOwnProperty('distance')) {
@@ -34,6 +35,12 @@ class pfd {
       else {
         this.angle = 0;
       }
+      if (initObj.hasOwnProperty('status')) {
+        this.status = initObj.status
+      }
+      else {
+        this.status = false;
+      }
     }
   }
 
@@ -43,6 +50,8 @@ class pfd {
     bufferOffset = _serializer.int8(obj.distance, buffer, bufferOffset);
     // Serialize message field [angle]
     bufferOffset = _serializer.int8(obj.angle, buffer, bufferOffset);
+    // Serialize message field [status]
+    bufferOffset = _serializer.bool(obj.status, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -54,11 +63,13 @@ class pfd {
     data.distance = _deserializer.int8(buffer, bufferOffset);
     // Deserialize message field [angle]
     data.angle = _deserializer.int8(buffer, bufferOffset);
+    // Deserialize message field [status]
+    data.status = _deserializer.bool(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 2;
+    return 3;
   }
 
   static datatype() {
@@ -68,7 +79,7 @@ class pfd {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '9f2f798034d31200675698594323e8ee';
+    return 'b2931a42170a1095d7904fa2881d4ca7';
   }
 
   static messageDefinition() {
@@ -76,6 +87,7 @@ class pfd {
     return `
     int8 distance
     int8 angle
+    bool status
     
     `;
   }
@@ -98,6 +110,13 @@ class pfd {
     }
     else {
       resolved.angle = 0
+    }
+
+    if (msg.status !== undefined) {
+      resolved.status = msg.status;
+    }
+    else {
+      resolved.status = false
     }
 
     return resolved;

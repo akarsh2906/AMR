@@ -25,11 +25,13 @@ struct pfd_
 
   pfd_()
     : distance(0)
-    , angle(0)  {
+    , angle(0)
+    , status(false)  {
     }
   pfd_(const ContainerAllocator& _alloc)
     : distance(0)
-    , angle(0)  {
+    , angle(0)
+    , status(false)  {
   (void)_alloc;
     }
 
@@ -40,6 +42,9 @@ struct pfd_
 
    typedef int8_t _angle_type;
   _angle_type angle;
+
+   typedef uint8_t _status_type;
+  _status_type status;
 
 
 
@@ -71,7 +76,8 @@ template<typename ContainerAllocator1, typename ContainerAllocator2>
 bool operator==(const ::motor_controller::pfd_<ContainerAllocator1> & lhs, const ::motor_controller::pfd_<ContainerAllocator2> & rhs)
 {
   return lhs.distance == rhs.distance &&
-    lhs.angle == rhs.angle;
+    lhs.angle == rhs.angle &&
+    lhs.status == rhs.status;
 }
 
 template<typename ContainerAllocator1, typename ContainerAllocator2>
@@ -128,12 +134,12 @@ struct MD5Sum< ::motor_controller::pfd_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "9f2f798034d31200675698594323e8ee";
+    return "b2931a42170a1095d7904fa2881d4ca7";
   }
 
   static const char* value(const ::motor_controller::pfd_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x9f2f798034d31200ULL;
-  static const uint64_t static_value2 = 0x675698594323e8eeULL;
+  static const uint64_t static_value1 = 0xb2931a42170a1095ULL;
+  static const uint64_t static_value2 = 0xd7904fa2881d4ca7ULL;
 };
 
 template<class ContainerAllocator>
@@ -154,6 +160,7 @@ struct Definition< ::motor_controller::pfd_<ContainerAllocator> >
   {
     return "int8 distance\n"
 "int8 angle\n"
+"bool status\n"
 ;
   }
 
@@ -174,6 +181,7 @@ namespace serialization
     {
       stream.next(m.distance);
       stream.next(m.angle);
+      stream.next(m.status);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -196,6 +204,8 @@ struct Printer< ::motor_controller::pfd_<ContainerAllocator> >
     Printer<int8_t>::stream(s, indent + "  ", v.distance);
     s << indent << "angle: ";
     Printer<int8_t>::stream(s, indent + "  ", v.angle);
+    s << indent << "status: ";
+    Printer<uint8_t>::stream(s, indent + "  ", v.status);
   }
 };
 

@@ -8,14 +8,15 @@ import struct
 
 
 class pfd(genpy.Message):
-  _md5sum = "9f2f798034d31200675698594323e8ee"
+  _md5sum = "b2931a42170a1095d7904fa2881d4ca7"
   _type = "motor_controller/pfd"
   _has_header = False  # flag to mark the presence of a Header object
   _full_text = """int8 distance
 int8 angle
+bool status
 """
-  __slots__ = ['distance','angle']
-  _slot_types = ['int8','int8']
+  __slots__ = ['distance','angle','status']
+  _slot_types = ['int8','int8','bool']
 
   def __init__(self, *args, **kwds):
     """
@@ -25,7 +26,7 @@ int8 angle
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       distance,angle
+       distance,angle,status
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -38,9 +39,12 @@ int8 angle
         self.distance = 0
       if self.angle is None:
         self.angle = 0
+      if self.status is None:
+        self.status = False
     else:
       self.distance = 0
       self.angle = 0
+      self.status = False
 
   def _get_types(self):
     """
@@ -55,7 +59,7 @@ int8 angle
     """
     try:
       _x = self
-      buff.write(_get_struct_2b().pack(_x.distance, _x.angle))
+      buff.write(_get_struct_2bB().pack(_x.distance, _x.angle, _x.status))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -70,8 +74,9 @@ int8 angle
       end = 0
       _x = self
       start = end
-      end += 2
-      (_x.distance, _x.angle,) = _get_struct_2b().unpack(str[start:end])
+      end += 3
+      (_x.distance, _x.angle, _x.status,) = _get_struct_2bB().unpack(str[start:end])
+      self.status = bool(self.status)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -85,7 +90,7 @@ int8 angle
     """
     try:
       _x = self
-      buff.write(_get_struct_2b().pack(_x.distance, _x.angle))
+      buff.write(_get_struct_2bB().pack(_x.distance, _x.angle, _x.status))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -101,8 +106,9 @@ int8 angle
       end = 0
       _x = self
       start = end
-      end += 2
-      (_x.distance, _x.angle,) = _get_struct_2b().unpack(str[start:end])
+      end += 3
+      (_x.distance, _x.angle, _x.status,) = _get_struct_2bB().unpack(str[start:end])
+      self.status = bool(self.status)
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e)  # most likely buffer underfill
@@ -111,9 +117,9 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_2b = None
-def _get_struct_2b():
-    global _struct_2b
-    if _struct_2b is None:
-        _struct_2b = struct.Struct("<2b")
-    return _struct_2b
+_struct_2bB = None
+def _get_struct_2bB():
+    global _struct_2bB
+    if _struct_2bB is None:
+        _struct_2bB = struct.Struct("<2bB")
+    return _struct_2bB

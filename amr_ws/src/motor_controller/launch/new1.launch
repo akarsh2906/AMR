@@ -3,6 +3,8 @@
   <node pkg="rosserial_python" type="serial_node.py" name="arduino_mega" args="/dev/ttyACM1" />
   <node pkg="motor_controller" type="odom_node2" name="odometry_publisher" />
   <node pkg="motor_controller" type="pose_goal_pub" name="Pose_Goal_Publisher" />
+  <remap from="/cmd_vel" to="/cmd_vel_des"/>
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="Teleop" />
 
   <!-- Transformation Configuration ... Setting Up the Relationships Between Coordinate Frames -->
   <!-- node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" args="0.24 0 0.147 1.571 0 0 base_link laser 30" -->

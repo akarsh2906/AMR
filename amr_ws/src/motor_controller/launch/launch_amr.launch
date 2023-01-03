@@ -24,7 +24,7 @@
   </node> 
   
   !-- Map File -->
-  <arg name="map_file" default="$(find motor_controller)/map/irpstyle2.yaml"/>
+  <arg name="map_file" default="$(find motor_controller)/map/irp_outside.yaml"/>
 	
   <!-- Map Server -->
   <!-- Publish: /map, /map_metadata -->

@@ -16,7 +16,12 @@
     :reader angle
     :initarg :angle
     :type cl:fixnum
-    :initform 0))
+    :initform 0)
+   (status
+    :reader status
+    :initarg :status
+    :type cl:boolean
+    :initform cl:nil))
 )
 
 (cl:defclass pfd (<pfd>)
@@ -36,6 +41,11 @@
 (cl:defmethod angle-val ((m <pfd>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader motor_controller-msg:angle-val is deprecated.  Use motor_controller-msg:angle instead.")
   (angle m))
+
+(cl:ensure-generic-function 'status-val :lambda-list '(m))
+(cl:defmethod status-val ((m <pfd>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader motor_controller-msg:status-val is deprecated.  Use motor_controller-msg:status instead.")
+  (status m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <pfd>) ostream)
   "Serializes a message object of type '<pfd>"
   (cl:let* ((signed (cl:slot-value msg 'distance)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 256) signed)))
@@ -44,6 +54,7 @@
   (cl:let* ((signed (cl:slot-value msg 'angle)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 256) signed)))
     (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
     )
+  (cl:write-byte (cl:ldb (cl:byte 8 0) (cl:if (cl:slot-value msg 'status) 1 0)) ostream)
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <pfd>) istream)
   "Deserializes a message object of type '<pfd>"
@@ -53,6 +64,7 @@
     (cl:let ((unsigned 0))
       (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
       (cl:setf (cl:slot-value msg 'angle) (cl:if (cl:< unsigned 128) unsigned (cl:- unsigned 256))))
+    (cl:setf (cl:slot-value msg 'status) (cl:not (cl:zerop (cl:read-byte istream))))
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<pfd>)))
@@ -63,18 +75,19 @@
   "motor_controller/pfd")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<pfd>)))
   "Returns md5sum for a message object of type '<pfd>"
-  "9f2f798034d31200675698594323e8ee")
+  "b2931a42170a1095d7904fa2881d4ca7")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'pfd)))
   "Returns md5sum for a message object of type 'pfd"
-  "9f2f798034d31200675698594323e8ee")
+  "b2931a42170a1095d7904fa2881d4ca7")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<pfd>)))
   "Returns full string definition for message of type '<pfd>"
-  (cl:format cl:nil "int8 distance~%int8 angle~%~%~%"))
+  (cl:format cl:nil "int8 distance~%int8 angle~%bool status~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'pfd)))
   "Returns full string definition for message of type 'pfd"
-  (cl:format cl:nil "int8 distance~%int8 angle~%~%~%"))
+  (cl:format cl:nil "int8 distance~%int8 angle~%bool status~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <pfd>))
   (cl:+ 0
+     1
      1
      1
 ))
@@ -83,4 +96,5 @@
   (cl:list 'pfd
     (cl:cons ':distance (distance msg))
     (cl:cons ':angle (angle msg))
+    (cl:cons ':status (status msg))
 ))

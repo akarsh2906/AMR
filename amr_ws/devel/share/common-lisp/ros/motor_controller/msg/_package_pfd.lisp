@@ -3,4 +3,6 @@
           DISTANCE
           ANGLE-VAL
           ANGLE
+          STATUS-VAL
+          STATUS
 ))

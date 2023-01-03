@@ -528,6 +528,7 @@ hector_slam/hector_trajectory_server/clean: hector_slam/hector_trajectory_server
 # Directory level rules for directory motor_controller
 
 # Recursive "all" directory target.
+motor_controller/all: motor_controller/CMakeFiles/pid_control.dir/all
 motor_controller/all: motor_controller/CMakeFiles/motor_controller_generate_messages.dir/all
 motor_controller/all: motor_controller/CMakeFiles/pose_goal_pub.dir/all
 motor_controller/all: motor_controller/CMakeFiles/odom_node2.dir/all
@@ -541,6 +542,7 @@ motor_controller/preinstall:
 .PHONY : motor_controller/preinstall
 
 # Recursive "clean" directory target.
+motor_controller/clean: motor_controller/CMakeFiles/pid_control.dir/clean
 motor_controller/clean: motor_controller/CMakeFiles/_motor_controller_generate_messages_check_deps_pfd.dir/clean
 motor_controller/clean: motor_controller/CMakeFiles/motor_controller_gennodejs.dir/clean
 motor_controller/clean: motor_controller/CMakeFiles/motor_controller_geneus.dir/clean
@@ -2704,7 +2706,7 @@ hector_slam/hector_compressed_map_transport/CMakeFiles/sensor_msgs_generate_mess
 rplidar_ros/CMakeFiles/rplidarNodeClient.dir/all:
 	$(MAKE) -f rplidar_ros/CMakeFiles/rplidarNodeClient.dir/build.make rplidar_ros/CMakeFiles/rplidarNodeClient.dir/depend
 	$(MAKE) -f rplidar_ros/CMakeFiles/rplidarNodeClient.dir/build.make rplidar_ros/CMakeFiles/rplidarNodeClient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=96,97 "Built target rplidarNodeClient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=98,99 "Built target rplidarNodeClient"
 .PHONY : rplidar_ros/CMakeFiles/rplidarNodeClient.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2731,7 +2733,7 @@ rplidar_ros/CMakeFiles/rplidarNodeClient.dir/clean:
 rplidar_ros/CMakeFiles/rplidarNode.dir/all:
 	$(MAKE) -f rplidar_ros/CMakeFiles/rplidarNode.dir/build.make rplidar_ros/CMakeFiles/rplidarNode.dir/depend
 	$(MAKE) -f rplidar_ros/CMakeFiles/rplidarNode.dir/build.make rplidar_ros/CMakeFiles/rplidarNode.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=89,90,91,92,93,94,95 "Built target rplidarNode"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=91,92,93,94,95,96,97 "Built target rplidarNode"
 .PHONY : rplidar_ros/CMakeFiles/rplidarNode.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3190,7 +3192,7 @@ hector_slam/hector_imu_attitude_to_tf/CMakeFiles/tf2_msgs_generate_messages_eus.
 hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/all:
 	$(MAKE) -f hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/build.make hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/depend
 	$(MAKE) -f hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/build.make hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=85,86 "Built target pose_and_orientation_to_imu_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=87,88 "Built target pose_and_orientation_to_imu_node"
 .PHONY : hector_slam/hector_imu_tools/CMakeFiles/pose_and_orientation_to_imu_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -3937,6 +3939,33 @@ hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_eus.dir/c
 .PHONY : hector_slam/hector_mapping/CMakeFiles/hector_mapping_generate_messages_eus.dir/clean
 
 #=============================================================================
+# Target rules for target motor_controller/CMakeFiles/pid_control.dir
+
+# All Build rule for target.
+motor_controller/CMakeFiles/pid_control.dir/all:
+	$(MAKE) -f motor_controller/CMakeFiles/pid_control.dir/build.make motor_controller/CMakeFiles/pid_control.dir/depend
+	$(MAKE) -f motor_controller/CMakeFiles/pid_control.dir/build.make motor_controller/CMakeFiles/pid_control.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=85,86 "Built target pid_control"
+.PHONY : motor_controller/CMakeFiles/pid_control.dir/all
+
+# Build rule for subdir invocation for target.
+motor_controller/CMakeFiles/pid_control.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irp2023/AMR/amr_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 motor_controller/CMakeFiles/pid_control.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/irp2023/AMR/amr_ws/build/CMakeFiles 0
+.PHONY : motor_controller/CMakeFiles/pid_control.dir/rule
+
+# Convenience name for target.
+pid_control: motor_controller/CMakeFiles/pid_control.dir/rule
+
+.PHONY : pid_control
+
+# clean rule for target.
+motor_controller/CMakeFiles/pid_control.dir/clean:
+	$(MAKE) -f motor_controller/CMakeFiles/pid_control.dir/build.make motor_controller/CMakeFiles/pid_control.dir/clean
+.PHONY : motor_controller/CMakeFiles/pid_control.dir/clean
+
+#=============================================================================
 # Target rules for target motor_controller/CMakeFiles/_motor_controller_generate_messages_check_deps_pfd.dir
 
 # All Build rule for target.
@@ -4194,7 +4223,7 @@ motor_controller/CMakeFiles/motor_controller_generate_messages_py.dir/clean:
 motor_controller/CMakeFiles/pose_goal_pub.dir/all:
 	$(MAKE) -f motor_controller/CMakeFiles/pose_goal_pub.dir/build.make motor_controller/CMakeFiles/pose_goal_pub.dir/depend
 	$(MAKE) -f motor_controller/CMakeFiles/pose_goal_pub.dir/build.make motor_controller/CMakeFiles/pose_goal_pub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=87,88 "Built target pose_goal_pub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/irp2023/AMR/amr_ws/build/CMakeFiles --progress-num=89,90 "Built target pose_goal_pub"
 .PHONY : motor_controller/CMakeFiles/pose_goal_pub.dir/all
 
 # Build rule for subdir invocation for target.

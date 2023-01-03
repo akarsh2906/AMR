@@ -1624,6 +1624,19 @@ hector_mapping_generate_messages_eus/fast:
 .PHONY : hector_mapping_generate_messages_eus/fast
 
 #=============================================================================
+# Target rules for targets named pid_control
+
+# Build rule for target.
+pid_control: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pid_control
+.PHONY : pid_control
+
+# fast build rule for target.
+pid_control/fast:
+	$(MAKE) -f motor_controller/CMakeFiles/pid_control.dir/build.make motor_controller/CMakeFiles/pid_control.dir/build
+.PHONY : pid_control/fast
+
+#=============================================================================
 # Target rules for targets named _motor_controller_generate_messages_check_deps_pfd
 
 # Build rule for target.
@@ -1943,6 +1956,7 @@ help:
 	@echo "... _hector_mapping_generate_messages_check_deps_ResetMapping"
 	@echo "... hector_mapping_genlisp"
 	@echo "... hector_mapping_generate_messages_eus"
+	@echo "... pid_control"
 	@echo "... _motor_controller_generate_messages_check_deps_pfd"
 	@echo "... motor_controller_gennodejs"
 	@echo "... motor_controller_geneus"

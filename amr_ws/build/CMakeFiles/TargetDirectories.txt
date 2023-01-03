@@ -247,6 +247,7 @@
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/rebuild_cache.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/edit_cache.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/test.dir
+/home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/pid_control.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/_motor_controller_generate_messages_check_deps_pfd.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/install/strip.dir
 /home/irp2023/AMR/amr_ws/build/motor_controller/CMakeFiles/motor_controller_gennodejs.dir
