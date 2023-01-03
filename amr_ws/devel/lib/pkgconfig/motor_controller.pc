@@ -3,6 +3,6 @@ prefix=/home/irp2023/AMR/amr_ws/devel
 Name: motor_controller
 Description: Description of motor_controller
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/irp2023/AMR/amr_ws/devel/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: roscpp rospy std_msgs message_runtime

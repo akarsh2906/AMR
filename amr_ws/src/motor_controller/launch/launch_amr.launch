@@ -35,7 +35,7 @@
   <!-- Subscribe: /scan, /tf, /initialpose, /map -->
   <!-- Publish: /amcl_pose, /particlecloud, /tf -->
   <include file="$(find amcl)/examples/amcl_diff.launch" />
-    <param name="base_frame_id" type="string" value="base_link" />
+    <param name="base_frame_id" type="string" value="base_footprint" />
     <param name="transform_tolerance"       value="1.0"/>
     <param name="update_min_a" type="double" value="0.2" />
     <param name="Update_min_d" type="double" value="0.05" />
@@ -48,11 +48,19 @@
   <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
     <rosparam file="$(find motor_controller)/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
     <rosparam file="$(find motor_controller)/config/costmap_common_params.yaml" command="load" ns="local_costmap" />
-    <rosparam file="$(find motor_controller)/config/local_costmap_params.yaml" command="load" ns="local_costmap" />
-    <rosparam file="$(find motor_controller)/config/global_costmap_params.yaml" command="load" ns="global_costmap" />
-    <rosparam file="$(find motor_controller)/config/base_local_planner_params.yaml" command="load" />
-    <param name="controller_frequency" value="0.5"/>
-  </node>
+    <rosparam file="$(find motor_controller)/config/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find motor_controller)/config/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find motor_controller)/config/dwa_local_planner_params.yaml" command="load" />  
+
+    <param name="base_global_planner" value="global_planner/GlobalPlanner" />
+    <param name="controller_frequency" value="1.0" />
+    <param name="controller_patience" value="5.0" />
+    
+    <param name="base_local_planner" value="dwa_local_planner/DWAPlannerROS" />
+    <param name="controller_frequency" value="5.0" />
+    <param name="controller_patience" value="15.0" />
+    <param name="clearing_rotation_allowed" value="true" />
+</node>
 
 
 </launch>
