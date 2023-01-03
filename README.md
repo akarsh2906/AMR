@@ -1,2 +1,2 @@
-# AMR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
+# AMR
 Alpha X Autononomous mobile robot codes
