@@ -10,7 +10,11 @@ inflation_radius: 0.05
 #update_frequency: 0.5
 #publish_frequency: 0.5
 #rolling_window: false
+<<<<<<< HEAD
 transform_tolerance: 1.0
+=======
+transform_tolerance: 0.1
+>>>>>>> 51ac6bd40dd6690b4bc34e6a939984f686b606e6
 
 observation_sources: laser_scan_sensor
 

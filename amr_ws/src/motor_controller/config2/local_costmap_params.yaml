@@ -1,10 +1,17 @@
 local_costmap:
   global_frame: odom
   robot_base_frame: base_footprint
+<<<<<<< HEAD
   update_frequency: 10.0
   publish_frequency: 10.0
   static_map: false
   track_unknown_space: false
+=======
+  update_frequency: 1.0
+  publish_frequency: 1.0
+  track_unknown_space: false
+  static_map: false
+>>>>>>> 51ac6bd40dd6690b4bc34e6a939984f686b606e6
   rolling_window: true
   width: 10.0
   height: 10.0
