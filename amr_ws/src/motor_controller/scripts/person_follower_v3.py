@@ -5,8 +5,8 @@ import rospy
 from geometry_msgs.msg import Twist
 from motor_controller.msg import pfd
 
-MAX_LINEAR_VEL = 0.2
-MAX_ANGULAR_VEL = 0.6
+MAX_LINEAR_VEL = 0.4
+MAX_ANGULAR_VEL = 0.8
 
 LINEAR_MSG = None
 ANGULAR_MSG = None
@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
     qr_sub = rospy.Subscriber("qr_data", pfd, qr_data_callback)
 
-    cmd_vel_pub = rospy.Publisher("cmd_vel", Twist, queue_size=10)
+    cmd_vel_pub = rospy.Publisher("cmd_vel_des", Twist, queue_size=10)
     rate = rospy.Rate(10)
     delay = rospy.Rate(1)
 
@@ -66,6 +66,7 @@ if __name__ == "__main__":
             cmd_vel_pub.publish(vel_msg)
 
             rate.sleep()
+            #rospy.spin()
 
         except:
             pass

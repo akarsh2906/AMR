@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-base_local_planner : navfn/NavfnROS
-=======
-base_local_planner : "dwa_local_planner/DWAPlannerROS"
->>>>>>> 51ac6bd40dd6690b4bc34e6a939984f686b606e6
