@@ -1,9 +1,10 @@
 <launch>
+
   <!-- ................................Navigation................................ -->
 
   <!-- Arguments -->
   <arg name="map_file" default="$(find motor_controller)/map/irp_outside.yaml"/>
-  <arg name="open_rviz" default="true"/>
+  <arg name="open_rviz" default="false"/>
 
   <!-- Rviz to map coordinates -->
   <node pkg="motor_controller" type="pose_goal_pub" name="Pose_Goal_Publisher" />
@@ -20,7 +21,7 @@
 
   <!-- rviz -->
   <group if="$(arg open_rviz)">
-    <node pkg="rviz" type="rviz" name="rviz" required="true"
-          args="-d $(find motor_controller)/rviz/AMR_rvizconfig2.rviz"/>
+    <node pkg="rviz" type="rviz" name="rviz" required="true" args="-d $(find motor_controller)/rviz/AMR_rvizconfig2.rviz" />
+  </group>
 
 </launch>

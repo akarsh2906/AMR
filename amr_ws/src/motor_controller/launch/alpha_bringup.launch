@@ -1,7 +1,7 @@
 <launch>
   <!-- ................................Drive and Odometry................................ -->
   <node pkg="rosserial_python" type="serial_node.py" name="arduino_uno" args="/dev/ttyACM0" />
-  <!-- node pkg="rosserial_python" type="serial_node.py" name="arduino_mega" args="/dev/ttyACM1" -->
+  <node pkg="rosserial_python" type="serial_node.py" name="arduino_mega" args="/dev/ttyACM1" />
   <node pkg="motor_controller" type="odom_node2" name="odometry_publisher" />
   <!-- remap from="/cmd_vel" to="/cmd_vel_des"-->
   <node pkg="motor_controller" type="pid.py" name="PID_controller" />
