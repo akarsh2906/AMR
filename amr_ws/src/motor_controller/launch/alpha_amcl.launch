@@ -1,0 +1,11 @@
+<launch>
+
+  <!-- ................................Localization................................ -->
+  <include file="$(find amcl)/examples/amcl_diff.launch" />
+    <param name="base_frame_id" type="string" value="base_footprint" />
+    <param name="transform_tolerance"       value="1.0"/>
+    <param name="update_min_a" type="double" value="0.2" />
+    <param name="Update_min_d" type="double" value="0.05" />
+    <param name="odom_frame_id" type="string" value="odom" />
+
+</launch>

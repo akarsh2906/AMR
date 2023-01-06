@@ -1,0 +1,7 @@
+<launch>
+  <!-- ................................Mapping................................ -->
+
+  <!-- Hector SLAM -->
+  <include file="$(find hector_slam_launch)/launch/tutorial.launch">
+
+</launch>

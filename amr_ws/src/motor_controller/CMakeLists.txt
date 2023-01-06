@@ -138,10 +138,9 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/motor_controller_node.cpp)
 #add_executable(odom_node scripts/odom_node.cpp)
-add_executable(odom_node1 scripts/odom_node1.cpp)
 add_executable(odom_node2 scripts/odom_node2.cpp)
 add_executable(pose_goal_pub scripts/pose_goal_pub.cpp)
-add_executable(pid_control scripts/pid.cpp)
+#add_executable(pid_control scripts/pid.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -158,10 +157,9 @@ add_executable(pid_control scripts/pid.cpp)
 #   ${catkin_LIBRARIES}
 # )
 #target_link_libraries(odom_node ${catkin_LIBRARIES})
-target_link_libraries(odom_node1 ${catkin_LIBRARIES})
 target_link_libraries(odom_node2 ${catkin_LIBRARIES})
 target_link_libraries(pose_goal_pub ${catkin_LIBRARIES})
-target_link_libraries(pid_control ${catkin_LIBRARIES})
+#target_link_libraries(pid_control ${catkin_LIBRARIES})
 
 #############
 ## Install ##

@@ -168,21 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-motor_controller/CMakeFiles/pid_control.dir/rule:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_controller/CMakeFiles/pid_control.dir/rule
-.PHONY : motor_controller/CMakeFiles/pid_control.dir/rule
-
-# Convenience name for target.
-pid_control: motor_controller/CMakeFiles/pid_control.dir/rule
-
-.PHONY : pid_control
-
-# fast build rule for target.
-pid_control/fast:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/pid_control.dir/build.make motor_controller/CMakeFiles/pid_control.dir/build
-.PHONY : pid_control/fast
-
-# Convenience name for target.
 motor_controller/CMakeFiles/_motor_controller_generate_messages_check_deps_pfd.dir/rule:
 	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_controller/CMakeFiles/_motor_controller_generate_messages_check_deps_pfd.dir/rule
 .PHONY : motor_controller/CMakeFiles/_motor_controller_generate_messages_check_deps_pfd.dir/rule
@@ -392,48 +377,6 @@ odom_node2/fast:
 	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/odom_node2.dir/build.make motor_controller/CMakeFiles/odom_node2.dir/build
 .PHONY : odom_node2/fast
 
-# Convenience name for target.
-motor_controller/CMakeFiles/odom_node1.dir/rule:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f CMakeFiles/Makefile2 motor_controller/CMakeFiles/odom_node1.dir/rule
-.PHONY : motor_controller/CMakeFiles/odom_node1.dir/rule
-
-# Convenience name for target.
-odom_node1: motor_controller/CMakeFiles/odom_node1.dir/rule
-
-.PHONY : odom_node1
-
-# fast build rule for target.
-odom_node1/fast:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/odom_node1.dir/build.make motor_controller/CMakeFiles/odom_node1.dir/build
-.PHONY : odom_node1/fast
-
-scripts/odom_node1.o: scripts/odom_node1.cpp.o
-
-.PHONY : scripts/odom_node1.o
-
-# target to build an object file
-scripts/odom_node1.cpp.o:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/odom_node1.dir/build.make motor_controller/CMakeFiles/odom_node1.dir/scripts/odom_node1.cpp.o
-.PHONY : scripts/odom_node1.cpp.o
-
-scripts/odom_node1.i: scripts/odom_node1.cpp.i
-
-.PHONY : scripts/odom_node1.i
-
-# target to preprocess a source file
-scripts/odom_node1.cpp.i:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/odom_node1.dir/build.make motor_controller/CMakeFiles/odom_node1.dir/scripts/odom_node1.cpp.i
-.PHONY : scripts/odom_node1.cpp.i
-
-scripts/odom_node1.s: scripts/odom_node1.cpp.s
-
-.PHONY : scripts/odom_node1.s
-
-# target to generate assembly for a file
-scripts/odom_node1.cpp.s:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/odom_node1.dir/build.make motor_controller/CMakeFiles/odom_node1.dir/scripts/odom_node1.cpp.s
-.PHONY : scripts/odom_node1.cpp.s
-
 scripts/odom_node2.o: scripts/odom_node2.cpp.o
 
 .PHONY : scripts/odom_node2.o
@@ -460,33 +403,6 @@ scripts/odom_node2.s: scripts/odom_node2.cpp.s
 scripts/odom_node2.cpp.s:
 	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/odom_node2.dir/build.make motor_controller/CMakeFiles/odom_node2.dir/scripts/odom_node2.cpp.s
 .PHONY : scripts/odom_node2.cpp.s
-
-scripts/pid.o: scripts/pid.cpp.o
-
-.PHONY : scripts/pid.o
-
-# target to build an object file
-scripts/pid.cpp.o:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/pid_control.dir/build.make motor_controller/CMakeFiles/pid_control.dir/scripts/pid.cpp.o
-.PHONY : scripts/pid.cpp.o
-
-scripts/pid.i: scripts/pid.cpp.i
-
-.PHONY : scripts/pid.i
-
-# target to preprocess a source file
-scripts/pid.cpp.i:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/pid_control.dir/build.make motor_controller/CMakeFiles/pid_control.dir/scripts/pid.cpp.i
-.PHONY : scripts/pid.cpp.i
-
-scripts/pid.s: scripts/pid.cpp.s
-
-.PHONY : scripts/pid.s
-
-# target to generate assembly for a file
-scripts/pid.cpp.s:
-	cd /home/irp2023/AMR/amr_ws/build && $(MAKE) -f motor_controller/CMakeFiles/pid_control.dir/build.make motor_controller/CMakeFiles/pid_control.dir/scripts/pid.cpp.s
-.PHONY : scripts/pid.cpp.s
 
 scripts/pose_goal_pub.o: scripts/pose_goal_pub.cpp.o
 
@@ -525,7 +441,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... pid_control"
 	@echo "... _motor_controller_generate_messages_check_deps_pfd"
 	@echo "... install/strip"
 	@echo "... motor_controller_gennodejs"
@@ -543,16 +458,9 @@ help:
 	@echo "... motor_controller_generate_messages_nodejs"
 	@echo "... motor_controller_genpy"
 	@echo "... odom_node2"
-	@echo "... odom_node1"
-	@echo "... scripts/odom_node1.o"
-	@echo "... scripts/odom_node1.i"
-	@echo "... scripts/odom_node1.s"
 	@echo "... scripts/odom_node2.o"
 	@echo "... scripts/odom_node2.i"
 	@echo "... scripts/odom_node2.s"
-	@echo "... scripts/pid.o"
-	@echo "... scripts/pid.i"
-	@echo "... scripts/pid.s"
 	@echo "... scripts/pose_goal_pub.o"
 	@echo "... scripts/pose_goal_pub.i"
 	@echo "... scripts/pose_goal_pub.s"
