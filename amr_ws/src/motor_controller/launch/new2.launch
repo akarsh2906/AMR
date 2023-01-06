@@ -5,7 +5,7 @@
   <node pkg="motor_controller" type="pose_goal_pub" name="Pose_Goal_Publisher" />
   <!-- remap from="/cmd_vel" to="/cmd_vel_des"-->
   <node pkg="motor_controller" type="pid.py" name="PID_controller" />
-  <node pkg="motor_controller" type="person_follower_v3.py" name="Person_follower" />
+  <node pkg="motor_controller" type="person_follower_v4.py" name="Person_follower" />
 
   <!-- Transformation Configuration ... Setting Up the Relationships Between Coordinate Frames -->
   <!-- node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" args="0.24 0 0.147 1.571 0 0 base_link laser 30" -->
