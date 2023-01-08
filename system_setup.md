@@ -1,7 +1,7 @@
 
-# Welcome to Alpha-X Autonomous mobile robot repository!
+# Alpha-X System setup
 
-Hi! This repository contains all the instructions and files required to configure the Alpha-X **AMR**
+Hi! This page all the instructions and files required to configure the Alpha-X **AMR**
 
 
 ## Remote PC Setup
